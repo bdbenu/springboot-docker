@@ -19,5 +19,9 @@ public class SpringbootRestController {
 		
 		return productService.getProduct();
 	}
+	@GetMapping("/test")
+	public String testApi() {
+		return"API TESTED";
+	}
 
 }
